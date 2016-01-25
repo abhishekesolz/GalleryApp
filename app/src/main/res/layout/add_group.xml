@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+
+        >
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/grpicon"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:background="@drawable/grpicon1"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:text="Please Provide Group Subject"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:paddingLeft="35dp"
+
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:inputType="textCapSentences|textCapWords"
+                android:id="@+id/grpsub"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Type Group Subject here"
+                android:background="#00000000"
+                android:singleLine="true"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/line"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="left"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:text="Create Group"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorPrimaryDark"
+android:id="@+id/create_grp"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

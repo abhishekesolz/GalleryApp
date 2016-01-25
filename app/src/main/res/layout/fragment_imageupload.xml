@@ -1,0 +1,264 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.esolz.findme.TrackMyTravel.TakePikFragment"
+    android:background="#ffffff"
+    >
+
+
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout_maim"
+        android:background="#ffffff"
+
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/actionBar">
+
+            <ImageButton
+                android:id="@+id/crpgrpback"
+                android:layout_width="45dp"
+                android:layout_height="18dp"
+                android:onClick="clickGrpBack"
+                android:paddingTop="20dp"
+                android:layout_margin="16dp"
+                android:layout_alignParentTop="true"
+                />
+
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="7"
+            >
+
+            <LinearLayout
+                android:layout_weight="1.5"
+                android:layout_height="0dp"
+                android:layout_width="fill_parent"
+                android:paddingLeft="35dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text="Caption :"
+
+                    />
+                <TextView
+                    android:id="@+id/grpsub"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+
+                    android:background="#00000000"
+                    android:singleLine="true"
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/line"
+                    android:layout_marginRight="40dp"
+                    android:layout_gravity="left"/>
+                <EditText
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:text=""
+                    android:id="@+id/location"
+                    android:background="#00000000"
+
+                    />
+            </LinearLayout>
+
+            <FrameLayout
+
+                android:layout_weight="4.5"
+                android:layout_height="0dp"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/imageset"
+                >
+                <LinearLayout
+                    android:id="@+id/piklayout"
+                    android:layout_height="fill_parent"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:background="@drawable/border_shape"
+                    >
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="take a picture of"
+                        android:textSize="30sp"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center"
+                        android:textColor="#000000"
+                        android:id="@+id/text1"
+                        />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="your trip"
+                        android:textSize="30sp"
+                        android:layout_gravity="center"
+                        android:textAllCaps="true"
+                        android:textColor="#000000"
+                        android:id="@+id/text2"
+
+                        />
+                    <ImageView
+                        android:layout_height="65dp"
+                        android:layout_width="65dp"
+                        android:background="@drawable/photo33"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/takepik"
+                        android:src="@drawable/ic_menu_camera"
+                        />
+                </LinearLayout>
+                <ImageView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:id="@+id/imagesetup"
+                    />
+            </FrameLayout>
+            <LinearLayout
+
+                android:layout_weight="4"
+                android:layout_height="0dp"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/imageset1"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:gravity="bottom"
+                >
+
+                <LinearLayout
+                    android:id="@+id/Addtomy"
+
+                    android:layout_weight="1.5"
+                    android:layout_height="0dp"
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:background="#40ffffff"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:padding="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        android:text="Add to My"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        android:text="saxsa Trip"
+                        android:layout_toRightOf="@+id/bt1"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/trip_name"
+                        />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:background="#40ffffff"
+                    android:paddingLeft="20dp"
+                    android:id="@+id/share"
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:layout_height="20dp"
+                        android:layout_width="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        android:text="Share"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+
+

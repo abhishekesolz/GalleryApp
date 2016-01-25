@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/front"
+        android:background="#ffffff"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/example_image_followall"/>
+
+        <LinearLayout
+            android:id="@+id/linearlistrow"
+            android:layout_toRightOf="@+id/example_image_followall"
+            android:orientation="vertical"
+            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            >
+            <TextView
+                android:inputType="textCapSentences"
+                android:gravity="center_vertical"
+                android:text="aaaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:id="@+id/example_itemname_followall"/>
+            <TextView
+                android:layout_gravity="left|center"
+                android:inputType="textCapSentences"
+                android:gravity="top"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="sssss"
+                android:id="@+id/example_location_followall"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:layout_alignRight="@+id/linearlistrow"
+            android:padding="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:background="@drawable/aroow"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

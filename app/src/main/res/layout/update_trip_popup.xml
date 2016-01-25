@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/textView1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Want to Edit the Trip Name?"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:weightSum="10"
+        android:gravity="center"
+        android:background="@drawable/edit_text"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:textColorHint="#000000"
+            android:singleLine="true"
+            android:id="@+id/editTextDialogUserInput"
+            android:hint="Update your trip?"
+            android:textColor="#000000"
+            android:background="#00000000"
+            >
+            <requestFocus />
+        </EditText>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_weight="3"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:weightSum="10"
+        android:gravity="center"
+        android:background="@drawable/edit_text"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:textColorHint="#000000"
+            android:singleLine="true"
+            android:hint="Update your trip?"
+            android:textColor="#000000"
+            android:background="#00000000"
+            >
+            <requestFocus />
+        </EditText>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_weight="3"
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:weightSum="10"
+        android:gravity="center"
+        android:background="@drawable/edit_text"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:textColorHint="#000000"
+            android:singleLine="true"
+            android:hint="Update your trip?"
+            android:textColor="#000000"
+            android:background="#00000000"
+            >
+            <requestFocus />
+        </EditText>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_weight="3"
+
+            />
+
+
+    </LinearLayout>
+
+    <com.digits.sdk.android.DigitsAuthButton
+        android:id="@+id/auth_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
